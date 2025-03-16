@@ -1,13 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-  <p>I am so empty...</p>
+    <!-- Bandeau de titre -->
+    <header>
+      <h1>Message Board</h1>
+      <button id="toggle-theme">Mode Sombre</button>
+    </header>
+
+    <!-- Configuration du serveur -->
+    <section id="server-config">
+        <h2>Configurer le micro-service</h2>
+        <input type="text" id="server-url" placeholder="Entrez l'URL du micro-service" />
+        <button id="save-server-url">Enregistrer</button>
+        <p id="server-status" class="hidden">URL mise à jour ✔️</p>
+    </section>
+
+    <!-- Liste de 5 messages -->
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul id="message-list">
+        <li>Hello! Welcome to our message board!</li>
+        <li>I'm a message!</li>
+        <li>I'm a message!</li>
+        <li>I'm a message!</li>
+        <li>I'm a message!</li>
+      </ul>
+      <button id="update-button">Mettre à jour</button>
+      <p id="update-status" class="hidden">Mise à jour effectuée </p> 
+    </section>
+    <!-- Formulaire pour nouveaux messages -->
+    <section id="new-message">
+      <h2>Post a new message</h2>
+      <input type="text" id="pseudo-input" placeholder="Your name" />
+      <textarea id="message-input" placeholder="Write your message here...">
+      </textarea>
+      <button id="send-button">Send</button>
+      <p>I am so empty...</p>
+    </section>
   </body>
   <script src="script.js"></script>
 </html>
