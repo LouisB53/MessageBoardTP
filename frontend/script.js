@@ -16,7 +16,7 @@ console.log(applique(n => n + 1, [1,2,3,4,5,6]));
 /* ---- Frontend ----  */
 
 // Récupération de l'URL du serveur depuis localStorage ou valeur par défaut
-let serverUrl = localStorage.getItem("serverUrl") || "https://088d31aa-9783-4fb6-beda-384447760bc3-00-2ysjlhn94291i.janeway.replit.dev";
+let serverUrl = localStorage.getItem("serverUrl") || "https://messageboard-server-mwzr.onrender.com";
 
 // Met à jour le champ input avec l'URL actuelle
 document.getElementById("server-url").value = serverUrl;
